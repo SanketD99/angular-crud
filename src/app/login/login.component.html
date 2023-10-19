@@ -1,0 +1,24 @@
+<div class="container container-login">
+    <div class="col-sm-6 mx-auto">
+        <h3 class="header mb-4">
+            LOGIN FORM
+        </h3>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-sm-8">
+                    <label for="username">Username:</label>
+                    <input class="form-control" type="text" id="username" [(ngModel)]="username" name="userName">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-8">
+                    <label for="password">Password:</label>
+                    <input class="form-control" type="password" id="password" [(ngModel)]="password" name="Password">
+                </div>
+            </div>
+            <div class="button-login">
+                <button type="button" class="btn btn-primary" (click)="login()">Login</button>
+            </div>
+        </form>
+    </div>
+</div>

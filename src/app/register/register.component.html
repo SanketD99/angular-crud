@@ -1,0 +1,36 @@
+<div class="container container-registraion">
+    <div class="col-sm-6 mx-auto">
+        <h3 class="header mb-4">
+            REGISTRATION FORM
+        </h3>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-sm-8">
+                    <label for="name">Name:</label>
+                    <input class="form-control" type="text" id="name" [(ngModel)]="name" name="firstName">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-8">
+                    <label for="username">Username:</label>
+                    <input class="form-control" type="text" id="username" [(ngModel)]="username" name="userName">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-8">
+                    <label for="password">Password:</label>
+                    <input class="form-control" type="password" id="password" [(ngModel)]="password" name="Password">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-8">
+                    <label for="id">ID:</label>
+                    <input class="form-control" type="text" id="id" [(ngModel)]="id" name="id">
+                </div>
+            </div>
+            <div class="form-row">
+                <button type="button" class="btn btn-primary" (click)="register()">Register</button>
+            </div>
+        </form>
+    </div>
+</div>

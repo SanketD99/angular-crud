@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="user-card col-sm-6 mx-auto mt-5">
+        <div class="header mb-4">
+            <h3>
+                USER DETAILS
+            </h3>
+        </div>
+        <div *ngIf="currentUser">
+            <p>Name: {{ currentUser.name }}</p>
+            <p>Username: {{ currentUser.username }}</p>
+            <p>ID: {{ currentUser.id }}</p>
+        </div>
+    </div>
+</div>
